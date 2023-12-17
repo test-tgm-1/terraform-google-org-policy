@@ -18,7 +18,7 @@
   Apply the constraint using the module
  *****************************************/
 module "org-policy" {
-  source           = "../../"
+  source           = "terraform-google-modules/org-policy/google"
   policy_for       = "folder"
   folder_id        = var.folder_id
   constraint       = "serviceuser.services"

@@ -18,7 +18,7 @@
   Apply the constraint using the module
  *****************************************/
 module "org-policy" {
-  source            = "../../"
+  source            = "terraform-google-modules/org-policy/google"
   policy_for        = "organization"
   organization_id   = var.organization_id
   constraint        = "compute.sharedReservationsOwnerProjects"
